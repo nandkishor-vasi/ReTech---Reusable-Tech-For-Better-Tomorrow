@@ -1,0 +1,90 @@
+.beneficiary-dashboard {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.dashboard-container {
+    width: 60%;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.beneficiary-info {
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.request-list, .device-list {
+    list-style: none;
+    padding: 0;
+}
+
+.request-item, .device-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.request-desc {
+    font-weight: bold;
+}
+
+.request-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.request-status.pending {
+    background-color: orange;
+}
+
+.request-status.accepted {
+    background-color: green;
+}
+
+.fetch-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fetch-button:hover {
+    background-color: #0056b3;
+}
+
+.accept-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
