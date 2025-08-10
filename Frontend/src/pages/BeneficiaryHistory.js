@@ -17,7 +17,7 @@ const BeneficiaryHistory = ({ updateTrigger }) => {
 
     const {user} = useAuth();
     const token = user?.token;    
-    const backendBaseUrl = "http://localhost:8080";
+    const backendBaseUrl = process.env.BACKEND_BASE_URL;
     console.log("token in history: " , token);
 
     useEffect(() => {

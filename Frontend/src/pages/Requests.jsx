@@ -18,7 +18,7 @@ const Requests = () => {
     const { user } = useAuth();
     const token = user?.token || " ";
     console.log("token in requests : ", token);
-    const backendBaseUrl = "http://localhost:8080";
+    const backendBaseUrl = process.env.BACKEND_BASE_URL;
 
     useEffect(() => {
         fetchRequests();

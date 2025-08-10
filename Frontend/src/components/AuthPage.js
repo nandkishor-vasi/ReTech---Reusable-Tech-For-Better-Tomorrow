@@ -82,7 +82,7 @@ const AuthPage = () => {
 
   const navigate = useNavigate();
   const { login } = useAuth();
-  const backendBaseUrl = "http://localhost:8080";
+  const backendBaseUrl = process.env.BACKEND_BASE_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

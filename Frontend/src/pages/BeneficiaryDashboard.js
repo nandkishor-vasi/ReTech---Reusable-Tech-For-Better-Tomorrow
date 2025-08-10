@@ -6,7 +6,7 @@ import {
     Chip, CircularProgress, Table, TableBody, TableCell, TableContainer, TableHead, 
     TableRow, Paper, Grid, Box, CardActionArea, Divider
 } from "@mui/material";
-import { Person, CheckCircle, PendingActions, Inventory } from "@mui/icons-material";
+import { Person, CheckCircle, PendingActions, Inventory, PriceChange } from "@mui/icons-material";
 import RequestForm from "./RequestForm";
 import BeneficiaryHistory from "./BeneficiaryHistory";
 import ParallaxHero from "../components/ParallaxHero";
@@ -26,7 +26,7 @@ const BeneficiaryDashboard = () => {
 
     const userData = JSON.parse(localStorage.getItem("user")) || {};
     const token = userData?.token;
-    const backendBaseUrl = "http://localhost:8080";
+    const backendBaseUrl = process.env.BACKEND_BASE_URL;
 
     useEffect(() => {
         const fetchBeneficiaryDetails = async () => {

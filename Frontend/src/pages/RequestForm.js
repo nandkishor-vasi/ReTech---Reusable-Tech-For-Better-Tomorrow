@@ -15,7 +15,7 @@ const RequestForm = ({beneficiaryId, onSuccess}) => {
     const [loading, setLoading] = useState(false);
     const userData = JSON.parse(localStorage.getItem("user"));
     const token = userData?.token || userData;
-    const backendUrl = "http://localhost:8080";
+    const backendUrl = process.env.BACKEND_BASE_URL;
 
 
     const handleChange =(e) =>{

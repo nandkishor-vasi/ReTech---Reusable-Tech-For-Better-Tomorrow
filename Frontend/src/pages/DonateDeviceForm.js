@@ -37,7 +37,7 @@ const DonateDeviceForm = ({ donorId, onSuccess }) => {
 
     const { user } = useAuth();
     const token = user?.token;
-    const backendUrl = "http://localhost:8080";
+    const backendUrl = process.env.BACKEND_BASE_URL;
 
     const cloudinaryCloudName = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME;
     const cloudinaryUploadPreset = process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET;

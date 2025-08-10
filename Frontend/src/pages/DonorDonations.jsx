@@ -14,10 +14,11 @@ const DonorDonations = () => {
     const {user} =useAuth();
     const token = user?.token || " ";
     console.log("token in donations : ", token);
+    const backendBaseUrl = process.env.BACKEND_BASE_URL;
 
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/api/devices/donors/${donorId}`,{
+        axios.get(`${backendBaseUrl}/api/devices/donors/${donorId}`,{
             headers: {
                 Authorization: `Bearer ${token}`,
             },
