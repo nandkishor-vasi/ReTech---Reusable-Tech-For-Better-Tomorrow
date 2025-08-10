@@ -9,7 +9,7 @@ const DonorHistory = () => {
 
     const userData = JSON.parse(localStorage.getItem("user"));
     const token = userData?.token || userData;
-    const backendBaseUrl = 'http://localhost:8080';
+    const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
     const donorHistoryUrl = `${backendBaseUrl}/api/donors/${donorId}/history`;
 
     const fetchDonorHistory = async () => {

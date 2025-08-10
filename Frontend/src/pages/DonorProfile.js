@@ -8,7 +8,7 @@ export default function Profile() {
   const {user } = useAuth()
   const token = user?.token
   const donorId  = user?.id;
-  const backendBaseUrl = process.env.BACKEND_BASE_URL;
+  const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
   const [donor, setDonor] = useState(null)
   const [profile, setProfile] = useState({
     profileImageUrl: "",

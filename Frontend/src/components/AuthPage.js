@@ -82,7 +82,7 @@ const AuthPage = () => {
 
   const navigate = useNavigate();
   const { login } = useAuth();
-  const backendBaseUrl = process.env.BACKEND_BASE_URL;
+  const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

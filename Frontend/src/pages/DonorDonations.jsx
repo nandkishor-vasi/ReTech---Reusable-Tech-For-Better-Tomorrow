@@ -14,7 +14,7 @@ const DonorDonations = () => {
     const {user} =useAuth();
     const token = user?.token || " ";
     console.log("token in donations : ", token);
-    const backendBaseUrl = process.env.BACKEND_BASE_URL;
+    const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
 
 
     useEffect(() => {

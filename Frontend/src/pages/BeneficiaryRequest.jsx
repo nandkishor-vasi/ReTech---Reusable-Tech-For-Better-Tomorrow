@@ -17,7 +17,7 @@ const Requests = () => {
     const { user } = useAuth();
     const token = user?.token || " ";
     console.log("token in requests : ", token);
-    const backendBaseUrl = process.env.BACKEND_BASE_URL;
+    const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
 
     useEffect(() => {
         fetchRequests();

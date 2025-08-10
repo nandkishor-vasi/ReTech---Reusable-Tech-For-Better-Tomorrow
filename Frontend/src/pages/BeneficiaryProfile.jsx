@@ -8,7 +8,7 @@ const BeneficiaryProfile = () => {
     const { user } = useAuth();
     const beneficiaryId = user?.id;
     const token = user?.token;
-    const backendBaseUrl = process.env.BACKEND_BASE_URL;
+    const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
 
     const [profile, setProfile] = useState({
         profileImageUrl: "",

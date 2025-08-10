@@ -16,7 +16,7 @@ const DonorLeaderboard = () => {
   const id = user?.id;
   const token = user?.token;
 
-  const backendBaseUrl = process.env.BACKEND_BASE_URL;
+  const backendBaseUrl = process.env.REACT_APP_BACKEND_BASE_URL;
 
   useEffect(() => {
     const fetchLeaderboard = async () => {
